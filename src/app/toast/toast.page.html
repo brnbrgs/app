@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Curiosidades</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-row>
+    <ion-col size="4">
+      <ion-button (click)="toast1()">Língua  
+        <ion-icon slot="start" name="book"></ion-icon>
+      </ion-button>
+    </ion-col>
+
+    <ion-col size="4">
+      <ion-button (click)="toast2()">Religião  
+        <ion-icon slot="start" name="people"></ion-icon>
+      </ion-button>
+    </ion-col>
+
+    <ion-col size="4">
+      <ion-button (click)="toast3()">Geografia 
+        <ion-icon slot="start" name="compass"></ion-icon>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-button expand="full" href="home">Voltar</ion-button>
+</ion-content>
