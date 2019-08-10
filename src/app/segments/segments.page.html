@@ -18,11 +18,16 @@
 
   <ion-list>
     <ion-item *ngFor="let value of items">
-        <div class="city">
-          <h4 class="turism">{{value.name}}</h4>
-          <img src="{{value.img}}"/>
-          <p class="turism">{{value.description}}</p>
-        </div>
+        <ion-card class="city">
+          <ion-img src="{{value.img}}"></ion-img>
+          <ion-card-header>
+            <ion-card-title class="turism">{{value.name}}</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+              {{value.description}}
+          </ion-card-content>
+      </ion-card>
     </ion-item>
   </ion-list>
 
